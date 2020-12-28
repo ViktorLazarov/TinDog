@@ -2,36 +2,26 @@ body {
   font-family: 'Montserrat';
 }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 900;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
 }
 
-h2 {
-  font-size: 3rem;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-family: 'Montserrat';
-  font-weight: 700;
-}
 /* Title Section */
 #title {
   background-color: #ff4c68;
   color: white;
 }
-/* Title Image */
+
+.title-heading{
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
 .title-image {
   width: 60%;
   padding-top: 40px;
   transform: rotate(25deg);
-  position:absolute;
+  position: absolute;
   top: -5.6rem;
   right: 25%;
 }
@@ -46,14 +36,16 @@ h3 {
   background-color: #fff;
   position: relative;
   z-index: 1;
-
 }
 
 .features-box {
   text-align: center;
   padding: 5%;
 }
-
+.features-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .features-box p {
   color: #8f8f8f;
 }
@@ -93,25 +85,12 @@ h3 {
   margin: 5% 3% 5% 0;
 }
 
-
-
 /* Testimonials */
-.testimonial-image {
-  width: 10%;
-  border-radius: 15%;
-  margin: 20px;
-}
-
 #testimonials {
   text-align: center;
   background-color: #ef8172;
   color: #fff;
 }
-
-.carousel-item {
-  padding: 7% 15%;
-}
-
 #press {
   background-color: #ef8172;
   text-align: center;
@@ -122,20 +101,46 @@ h3 {
   width: 15%;
   margin: 20px 20px 50px;
 }
+.testimonial-image {
+  width: 10%;
+  border-radius: 15%;
+  margin: 20px;
+}
+.testimonial-text{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+
 
 /* Pricing Section */
 #pricing {
   padding: 100px;
   text-align: center;
 }
-
+.pricing-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
 .pricing-card {
   padding: 3% 2%;
 }
+.card-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /* Media Query Breakpoints */
-
-@media (max-width: 1028px){
-
+@media (max-width: 1028px) {
   #title {
     text-align: center;
   }
@@ -145,6 +150,7 @@ h3 {
     transform: rotate(0);
   }
 }
+
 /* Call to Action */
 #cta {
   text-align: center;
@@ -152,21 +158,23 @@ h3 {
   color: white;
   padding: 5% 15%;
 }
-#cta h3 {
+
+.cta-heading {
   font-size: 2.5rem;
   line-height: 1.5;
+  font-weight: 700;
 }
-/* Footer */
 
+/* Footer */
 #footer {
   text-align: center;
   padding: 5% 15% 7%;
   background-color: #fff;
 }
+#footer p {
+  font-size: 1.2rem;
+}
 .footer-icon {
   padding: 0 2% 5%;
   font-size: 1.3rem;
-}
-#footer p {
-  font-size: 1.2rem;
 }
